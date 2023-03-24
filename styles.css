@@ -1,0 +1,54 @@
+* {
+    font-family: 'Lilita One', cursive;
+    background-color: #efefef;
+    font-weight: lighter;
+}
+
+.header {
+    display: grid;
+    padding: 10px 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.meme_generator {
+    margin: 10px auto;
+    width: 400px;
+}
+
+.meme_generator label {
+    display: block;
+    font-weight: bold;
+}
+
+
+
+.meme_generator input {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px 0 20px 0;
+}
+
+.meme_generator button {
+    align-items: center;
+    justify-items: center;
+    font-size: 75%;
+    font-weight: bolder;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.meme_generator button:hover {
+    background-color: black;
+    color: #efefef
+}
+
+#img {
+    width: 100%;
+    position: relative;
+}
+
+
+.txt {
+    position: absolute;
+}
