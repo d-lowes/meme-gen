@@ -75,7 +75,13 @@ body {
     z-index: 2;
 }
 
-.button {
-    position: absolute;
+.meme button {
+    cursor: pointer;
+    text-align: center;
+    background-color: #ffff;
 }
 
+.meme button:hover {
+    background-color: black;
+    color: #efefef
+}
