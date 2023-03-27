@@ -14,6 +14,7 @@ submitMeme.addEventListener('submit', function(e) {
   let btn = document.createElement('button');
   btn.setAttribute('type','button');
 
+
   // assign the image URL to a variable
   image.src = URL.createObjectURL(uploadImage.files[0]);
 
