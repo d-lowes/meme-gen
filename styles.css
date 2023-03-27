@@ -1,7 +1,9 @@
 * {
     font-family: 'Lilita One', cursive;
+}
+
+body {
     background-color: #efefef;
-    font-weight: lighter;
 }
 
 .header {
@@ -11,44 +13,69 @@
     justify-content: center;
 }
 
-.meme_generator {
+#meme_generator {
     margin: 10px auto;
-    width: 400px;
-}
+    position:relative;
 
-.meme_generator label {
-    display: block;
-    font-weight: bold;
 }
 
 
-
-.meme_generator input {
+#meme_generator input {
     width: 100%;
-    box-sizing: border-box;
-    margin: 0px 0 20px 0;
+    margin: 10px 0;
 }
 
-.meme_generator button {
-    align-items: center;
-    justify-items: center;
-    font-size: 75%;
-    font-weight: bolder;
-    padding: 5px 10px;
+#submit {
     cursor: pointer;
+    text-align: center;
+    background-color: #ffff;
+    max-width: 200px;
+
 }
 
-.meme_generator button:hover {
+#submit:hover {
     background-color: black;
     color: #efefef
 }
 
-#img {
-    width: 100%;
+.meme {
+    max-width: 100%;
+    max-height: 100%;
     position: relative;
+    padding: 20px;
+    text-align: center;
 }
 
+.upperText {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 250%;
+    color: white;
+    top: 10%;
+    z-index: 2;
+    text-transform: uppercase;;
+}
 
-.txt {
+.lowerText {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 250%;
+    color: white;
+    bottom: 15%;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+.meme img {
+    max-width: 100%;
+    z-index: 2;
+}
+
+.button {
     position: absolute;
 }
+
