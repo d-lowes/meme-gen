@@ -53,8 +53,7 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    font-size: 8vmax;
-    font-size: 8vmin;
+    font-size: 2.5em;
     color: white;
     top: 10%;
     z-index: 2;
@@ -66,8 +65,7 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    font-size: 8vmax;
-    font-size: 8vmin;
+    font-size: 2.5em;
     color: white;
     bottom: 15%;
     z-index: 2;
