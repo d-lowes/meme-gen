@@ -11,24 +11,18 @@ submitMeme.addEventListener('submit', function(e) {
   let upperText = document.createElement('div');
   let lowerText = document.createElement('div');
   let image = document.createElement('img');
-
-  // assign the image URL to a variable
-
-  image.src = URL.createObjectURL(uploadImage.files[0]);
-
-  /* create delete button overlay *** not working yet *** */
   let btn = document.createElement('button');
   btn.setAttribute('type','button');
-  btn.addEventListener('click', function(e) {
-    meme.remove();
-  });
+
+  // assign the image URL to a variable
+  image.src = URL.createObjectURL(uploadImage.files[0]);
 
   // assign values to form inputs
-  // image.src = document.getElementById('image_url').value;
   upperText.classList.add('upperText');
   upperText.innerHTML = document.getElementById('upper_text').value;
   lowerText.classList.add('lowerText');
   lowerText.innerHTML = document.getElementById('lower_text').value;
+  btn.innerHTML = 'REMOVE MEME';
 
   // append text and button to image
   meme.classList.add('meme');
@@ -41,7 +35,11 @@ submitMeme.addEventListener('submit', function(e) {
   let memeCanvas = document.getElementById('Canvas');
   memeCanvas.append(meme);
 
-
+  /* create delete button overlay *** not working yet *** */
+  btn.addEventListener('click', function(e) {
+    // console.log(e.target)
+    meme.remove();
+  });
 
   // reset the form after a submit
   submitMeme.reset();
