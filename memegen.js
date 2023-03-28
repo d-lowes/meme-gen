@@ -12,7 +12,6 @@ submitMeme.addEventListener('submit', function(e) {
   let lowerText = document.createElement('div');
   let image = document.createElement('img');
   let btn = document.createElement('button');
-  btn.setAttribute('type','button');
 
 
   // assign the image URL to a variable
@@ -36,7 +35,7 @@ submitMeme.addEventListener('submit', function(e) {
   let memeCanvas = document.getElementById('Canvas');
   memeCanvas.append(meme);
 
-  /* create delete button overlay *** not working yet *** */
+  /* create delete button
   btn.addEventListener('click', function(e) {
     // console.log(e.target)
     meme.remove();
